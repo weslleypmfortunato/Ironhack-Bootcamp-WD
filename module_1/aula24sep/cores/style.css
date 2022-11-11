@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+
+
+#veneza {
+  width: 100%;
+  height: 400px;
+  background-image: url(/aula24sep/cores/bugdroid.png);
+}
+
+h1 {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.red-rgb {
+  color: rgb(255, 0, 0);
+}
+
+.red-hex {
+  color: #FF0000;
+}
+
+.red-hex-short {
+  color: #F00;
+}
+
+.green {
+  color: rgb(0, 255, 0);
+}
+
+.green-alpha {
+  color: rgba(0, 255, 0, 0.7);
+}
+
+div {
+  color: #FFF;
+  background-color: #007acc;
+}
+
+.dark {
+  background-color: #004573;
+}
+
+
+

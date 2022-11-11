@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.box {
+  background-color: rgb(217, 205, 228);
+  width: 170px;
+  border: 1px solid brown;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 10px;
+  margin: 10px 20px;
+}
+
+.box.padding {
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 10px 20px 5px;
+  box-sizing: content-box;
+}
+
+.box.margin {
+  margin: 10px;
+}
+
+.circulo {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+h1 {
+  border-bottom: 1px solid black;
+}
+
+.box.center {
+  margin: 0 auto;
+}

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+* {
+  font-family: sans-serif;
+}
+
+.blue-li {
+  background-color: blue;
+}
+
+#bluelis {
+  background-color: blue;
+}
+
+div a {
+  text-decoration: none;
+}
+
+div p {
+  font-family: sans-serif;
+}
+
+div section p {
+  font-family: serif;
+}
+
+div span {
+  color: red;
+}
+
+#vizinhos div{
+  background-color: green;
+}
+
+#vizinhos #terceira {
+  background-color: red;
+}
+
+#vizinhos #terceira + div /* A primeira div que vier deppois da div terceira */ {
+  background-color: yellow;
+}
+
+#irmaos div {
+  background-color: aquamarine;
+}
+
+#irmaos div + div {
+  background-color: blueviolet;
+}
+
+h1, h2 {
+  font-family: sans-serif;
+}
+
+#red.bold {
+  color: red;
+  font-weight: bold;
+}
+
+a {
+  display: block;
+}
+
+a[href^="https"]{
+  color: green;
+}
+
+a[href$="com"] {
+  color: gray;
+}
+
+input[type="text"] {
+  width: 200px;
+}
+
+#irmaos  div:nth-child(4), div:nth-child(5){
+  font-weight: bold;
+}

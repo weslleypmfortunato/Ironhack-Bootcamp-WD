@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.responsive-div {
+  width: 50%;
+  background-color: blue;
+}
+
+@media (min-width: 1000px) {
+  .responsive-div {
+    background-color: blue;
+  }
+}
