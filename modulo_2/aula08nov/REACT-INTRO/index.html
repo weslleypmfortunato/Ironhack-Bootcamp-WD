@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Intro</title>
+</head>
+<body>
+  <!--Tag onde os componentes serão renderizados-->
+  <div id="root">
+    <div class="navbar">Meu site</div>
+    <section>
+      <p>Este eé meu site</p>
+    </section>
+    <footer>
+      copyright eu mesmo
+    </footer>
+  </div>
+
+  <!--Sripts que fazem o REACT funcionar-->
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+
+
+
+  <!--Scrip para criar meus componentes-->
+  <script type="text/babel">
+    function Navbar() {
+      return <div>Navbar</div>
+    }
+
+    function MainContent() {
+      return (
+        <section>
+          <p>Teste</p>
+        </section>
+      )
+    }
+
+    function Footer() {
+      return <footer>copyright eu mesmo</footer>
+    }
+
+    function MySite() {
+      return (
+        <div>
+          <Navbar/>
+          <MainContent/>
+          <Footer/>
+        </div>
+      )
+    }
+
+    const container = document.getElementById('root')
+    const root = ReactDOM.createRoot(container)
+    root.render(<MySite />)
+    // const element = React.createElement('button', {}, 'Teste')
+    // console.log(element)
+    // const domContainer = document.querySelector('#like_button_container');
+    // ReactDOM.render(element, domContainer);
+  </script>
+</body>
+</html>
